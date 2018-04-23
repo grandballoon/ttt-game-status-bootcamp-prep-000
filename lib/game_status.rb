@@ -24,6 +24,6 @@ end
 
 def full?(board)
   WIN_COMBINATIONS.each do |index|
-    board[index[0]] == "X" && board[index[0]] == "O"
+    board[index[0]] == "X" || board[index[0]] == "O"
   end
 end
