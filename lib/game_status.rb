@@ -27,3 +27,7 @@ def full?(board)
     board[index[0]] == "X" || board[index[0]] == "O"
   end
 end
+
+def draw?(board)
+
+end
