@@ -42,6 +42,6 @@ def winner(board)
   if over?(board) && !won?(board)
     return nil
   if won?(board)
-    return board[[won?[0]]
+    return board[[won?[0]]]
   end
 end
