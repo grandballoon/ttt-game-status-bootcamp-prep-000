@@ -23,9 +23,11 @@ def won?(board)
 end
 
 def full?(board)
-  WIN_COMBINATIONS.all? do |index|
-    board[index[0]] == "X" || board[index[0]] == "O"
-  end
+  ##WIN_COMBINATIONS.all? do |index|
+    ##board[index[0]] == "X" || board[index[0]] == "O"
+##  end
+
+!board.include?(" ")
 end
 
 def draw?(board)
