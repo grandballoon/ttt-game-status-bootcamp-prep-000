@@ -39,7 +39,9 @@ won?(board) || draw?(board) || full?(board)
 end
 
 def winner(board)
-if over?(board) && !won?(board)
-  return nil
-end
+  if over?(board) && !won?(board)
+    return nil
+  if won?(board) 
+    return board[[won?[0]]
+  end
 end
