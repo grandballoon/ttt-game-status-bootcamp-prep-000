@@ -23,7 +23,7 @@ def won?(board)
 end
 
 def full?(board)
-  WIN_COMBINATIONS.each do |index|
+  WIN_COMBINATIONS.all? do |index|
     board[index[0]] == "X" || board[index[0]] == "O"
   end
 end
